@@ -1,4 +1,6 @@
 {
+  "buildCommand": "echo 'Static site — tidak perlu build'",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "headers": [
     { "source": "/(.*)", "headers": [
