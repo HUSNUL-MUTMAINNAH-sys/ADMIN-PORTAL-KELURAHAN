@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin — Kelurahan Lembang</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <form id="loginForm" class="login-card">
+    <img src="logo.png" alt="" width="56" height="56">
+    <h1>Admin Portal Kelurahan Lembang</h1>
+    <p class="muted">Masuk untuk mengelola konten situs publik.</p>
+    <label>Email<input type="email" name="email" required autocomplete="username"></label>
+    <label>Kata sandi<input type="password" name="password" required autocomplete="current-password"></label>
+    <button class="btn primary" type="submit">Masuk</button>
+    <p id="loginErr" class="err"></p>
+  </form>
+</div>
+
+<div id="app" class="app" hidden>
+  <aside class="side" id="side">
+    <div class="brand"><img src="logo.png" alt="" width="36" height="36"><div><b>Admin Lembang</b><small>Kab. Bantaeng</small></div></div>
+    <nav id="nav"></nav>
+    <div class="side-foot"><a id="siteLink" target="_blank" rel="noopener">Lihat situs publik ↗</a><button class="btn ghost" id="logout">Keluar</button></div>
+  </aside>
+  <main class="main">
+    <header class="top"><button class="btn ghost burger" id="burger" aria-label="Menu">☰</button><h2 id="title"></h2><span id="who" class="muted"></span></header>
+    <section id="view"></section>
+  </main>
+</div>
+
+<dialog id="dlg"><form id="form" method="dialog"><h3 id="dlgTitle"></h3><div id="fields"></div>
+  <div class="dlg-act"><button class="btn ghost" type="button" id="cancel">Batal</button><button class="btn primary" type="submit" id="save">Simpan</button></div></form></dialog>
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script src="icons.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+{ "name": "admin-kelurahan-lembang", "version": "1.0.0", "private": true,
+  "scripts": { "build": "echo 'Static site — tidak perlu build'" } }
